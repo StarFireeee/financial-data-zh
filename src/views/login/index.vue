@@ -1,10 +1,11 @@
 <template>
   <div>
-    {{ base }}
+    <p>123</p>
   </div>
 </template>
 
 <script>
+console.log(1)
 export default {
   data () {
     return {
