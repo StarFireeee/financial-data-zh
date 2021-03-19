@@ -1,6 +1,7 @@
 <template>
   <div>
     <p>123</p>
+    <div>test</div>
   </div>
 </template>
 
