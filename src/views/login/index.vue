@@ -1,6 +1,6 @@
 <template>
   <div>
-    我是登录页,试试1
+    我是登录页,试试1git111111
   </div>
 </template>
 
