@@ -1,23 +1,13 @@
 <template>
   <div>
-    <p>123</p>
-    <div>test</div>
+    我是登录页
   </div>
 </template>
 
 <script>
-console.log(1)
-export default {
-  data () {
-    return {
-      base: 'Hello,World'
-    }
-  }
-}
+export default {}
 </script>
 
 <style lang="less" scoped>
-div{
-  height: 300px;
-}
+
 </style>

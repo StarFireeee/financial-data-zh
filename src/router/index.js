@@ -9,7 +9,7 @@ const routes = [
     redirect: '/login'
   },
   {
-    path: 'login',
+    path: '/login',
     component: () => import('../views/login')
   }
 ]
