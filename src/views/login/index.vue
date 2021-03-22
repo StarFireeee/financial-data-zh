@@ -1,6 +1,6 @@
 <template>
   <div>
-    我是登录页,试试
+    我是登录页,试试1
   </div>
 </template>
 
