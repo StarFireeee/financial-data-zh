@@ -1,11 +1,17 @@
 <template>
   <div>
-    我是登录页,开始开工了！
+    {{ title }}
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  data (){
+    return {
+      title: '星火系统'
+    }
+  }
+}
 </script>
 
 <style lang="less" scoped>
