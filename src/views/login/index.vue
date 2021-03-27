@@ -1,6 +1,6 @@
 <template>
-  <div>
-    {{ title }}
+  <div class="bg-banner">
+
   </div>
 </template>
 
@@ -15,5 +15,10 @@ export default {
 </script>
 
 <style lang="less" scoped>
-
+.bg-banner{
+  height: 100vh;
+  background: url('../../assets/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 </style>
