@@ -1,6 +1,8 @@
 <template>
   <div class="bg-banner">
+    <div class="login">
 
+    </div>
   </div>
 </template>
 
@@ -20,5 +22,18 @@ export default {
   background: url('../../assets/bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+
+  .login{
+    height: 300px;
+    width: 450px;
+    padding: 0 50px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    margin-top: -150px;
+    margin-left: -150px;
+  }
+
 }
 </style>
