@@ -18,7 +18,7 @@
       </a-form-model>
       <a-form-model-item>
         <div class="sign">
-          <a-button type="primary">
+          <a-button type="primary" @click="login">
             登录
           </a-button>
           <a-button >
@@ -45,6 +45,9 @@ export default {
     }
   },
   methods: {
+    login () {
+      this.$router.push('/dashboard')
+    }
   }
 }
 </script>
