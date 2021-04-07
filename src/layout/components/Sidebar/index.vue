@@ -6,6 +6,12 @@
 
 <script>
 export default {
+  name: 'SidebarLogo',
+  data() {
+    return {
+      title: '星火系统'
+    }
+  }
 }
 </script>
 
