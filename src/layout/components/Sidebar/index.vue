@@ -1,16 +1,14 @@
 <template>
   <div>
-
+    <Logo />
   </div>
 </template>
 
 <script>
+import Logo from './Logo'
 export default {
-  name: 'SidebarLogo',
-  data() {
-    return {
-      title: '星火系统'
-    }
+  components: {
+    Logo
   }
 }
 </script>

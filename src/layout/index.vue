@@ -1,6 +1,6 @@
 <template>
     <a-layout class='layout-wrapper'>
-      <a-layout-sider>Sider</a-layout-sider>
+      <a-layout-sider><Sidebar /></a-layout-sider>
       <a-layout>
         <a-layout-header>Header</a-layout-header>
         <a-layout-content>Content</a-layout-content>
@@ -10,8 +10,12 @@
 </template>
 
 <script>
+import { Sidebar } from './components'
 export default {
-
+  name: 'Layout',
+  components: {
+    Sidebar
+  }
 }
 </script>
 
