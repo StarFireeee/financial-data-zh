@@ -23,4 +23,5 @@ export default {
 .layout-wrapper{
   height: 100vh;
 }
+
 </style>

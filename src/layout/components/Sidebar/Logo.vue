@@ -22,7 +22,7 @@ export default {
 <style lang="less" scoped>
 .sidebar-logo-container{
   height: 64px;
-  background: #108ee9;
+  background: #2b2f3a;
   .sidebarRouter{
     width: 100%;
     display: flex;
@@ -31,7 +31,7 @@ export default {
       margin: 5px;
     }
     .sidebarTitle{
-      color: rgb(255, 195, 83);
+      color: #fff;
       font-size: 20px;
       line-height: 64px;
       text-align: center;
