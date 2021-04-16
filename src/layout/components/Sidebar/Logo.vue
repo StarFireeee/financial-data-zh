@@ -1,15 +1,21 @@
 <template>
   <div class="sidebar-logo-container">
-    <router-link to='/' class="sidebarRouter">
-      <img :src="src" class="sidebarlogo">
-      <div class="sidebarTitle">{{title}}</div>
+    <router-link to="/" class="sidebarRouter">
+      <img :src="src" :class="!sidebar ? '' : 'img-content'" />
+      <div class="sidebarTitle" v-show="!sidebar">{{ title }}</div>
     </router-link>
   </div>
 </template>
 
 <script>
+import { mapState } from 'vuex'
 export default {
   name: 'SidebarLogo',
+  computed: {
+    ...mapState({
+      sidebar: state => state.app.sidebar
+    })
+  },
   data() {
     return {
       title: '星火系统',
@@ -20,17 +26,20 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.sidebar-logo-container{
+.sidebar-logo-container {
   height: 64px;
   background: #2b2f3a;
-  .sidebarRouter{
+  .sidebarRouter {
     width: 100%;
     display: flex;
-    img{
+    img {
       height: 53px;
       margin: 5px;
     }
-    .sidebarTitle{
+    .img-content {
+      margin-left: 13px;
+    }
+    .sidebarTitle {
       color: #fff;
       font-size: 20px;
       line-height: 64px;
