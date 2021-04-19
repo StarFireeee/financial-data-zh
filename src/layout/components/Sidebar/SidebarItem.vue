@@ -1,12 +1,5 @@
 <template>
   <div>
-    <a-button
-      type="primary"
-      style="margin-bottom: 16px"
-      @click="toggleCollapsed"
-    >
-      <a-icon :type="sidebar ? 'menu-unfold' : 'menu-fold'" />
-    </a-button>
     <a-menu
       :default-selected-keys="['1']"
       :default-open-keys="['sub1']"
@@ -78,10 +71,6 @@ export default {
       sidebar: state => state.app.sidebar
     })
   },
-  methods: {
-    toggleCollapsed() {
-      this.$store.dispatch('app/toggleSidebar')
-    }
-  }
+  methods: {}
 }
 </script>
