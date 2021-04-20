@@ -2,7 +2,7 @@
   <a-layout class="layout-wrapper">
     <a-layout-sider :collapsed="sidebar"><Sidebar /></a-layout-sider>
     <a-layout>
-      <a-layout-content>Content</a-layout-content>
+      <a-layout-content>title</a-layout-content>
     </a-layout>
   </a-layout>
 </template>
