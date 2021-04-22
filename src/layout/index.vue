@@ -2,8 +2,8 @@
   <a-layout class="layout-wrapper">
     <a-layout-sider :collapsed="sidebar"><Sidebar /></a-layout-sider>
     <a-layout>
-      <a-layout-content
-        >title
+      <a-layout-content>
+        title
         <router-view :key="key" />
       </a-layout-content>
     </a-layout>

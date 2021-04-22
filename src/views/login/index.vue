@@ -21,7 +21,7 @@
           <a-button type="primary" @click="login">
             登录
           </a-button>
-          <a-button >
+          <a-button>
             注册
           </a-button>
         </div>
@@ -45,8 +45,8 @@ export default {
     }
   },
   methods: {
-    login () {
-      this.$router.push('/dashboard')
+    login() {
+      this.$router.push('/home')
     }
   }
 }
@@ -62,7 +62,7 @@ export default {
   .login {
     height: 300px;
     width: 450px;
-    padding:  50px;
+    padding: 50px;
     opacity: 0.91;
     border-radius: 30px;
     background-color: #fff; /* 不支持线性的时候显示 */
@@ -77,9 +77,9 @@ export default {
     margin-top: -150px;
     margin-left: -150px;
 
-    .sign{
+    .sign {
       margin-top: 30px;
-      button{
+      button {
         width: 40%;
         margin-left: 25px;
       }

@@ -1,15 +1,17 @@
 <template>
   <div>
     <a-menu
+      v-model="selectedKeys"
       :default-selected-keys="['1']"
       :default-open-keys="['sub1']"
       mode="inline"
       theme="dark"
       :inline-collapsed="sidebar"
+      @click="handleJump"
     >
-      <a-menu-item key="1">
+      <a-menu-item key="zh">
         <a-icon type="pie-chart" />
-        <span>Option 1</span>
+        <span>财政数据</span>
       </a-menu-item>
       <a-menu-item key="2">
         <a-icon type="desktop" />
@@ -63,14 +65,21 @@
 import { mapState } from 'vuex'
 export default {
   data() {
-    this.collapsed = false
-    return {}
+    return {
+      selectedKeys: []
+    }
   },
   computed: {
     ...mapState({
       sidebar: state => state.app.sidebar
     })
   },
-  methods: {}
+  methods: {
+    handleJump({ key }) {
+      if (!this.selectedKeys.includes(key)) {
+        this.$router.push({ name: key })
+      }
+    }
+  }
 }
 </script>
