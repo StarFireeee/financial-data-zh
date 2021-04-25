@@ -3,7 +3,7 @@
     <a-layout-sider :collapsed="sidebar"><Sidebar /></a-layout-sider>
     <a-layout>
       <a-layout-content>
-        title
+        <Navbar />
         <router-view :key="key" />
       </a-layout-content>
     </a-layout>
@@ -12,11 +12,12 @@
 
 <script>
 import { mapState } from 'vuex'
-import { Sidebar } from './components'
+import { Sidebar, Navbar } from './components'
 export default {
   name: 'Layout',
   components: {
-    Sidebar
+    Sidebar,
+    Navbar
   },
   computed: {
     ...mapState({
