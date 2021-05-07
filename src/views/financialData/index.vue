@@ -1,6 +1,6 @@
 <template>
   <div>
-    test123`123`123·123`123
+    test123`123`123·123`123··
   </div>
 </template>
 
