@@ -1,6 +1,6 @@
 <template>
   <div>
-    6
+    8
   </div>
 </template>
 
